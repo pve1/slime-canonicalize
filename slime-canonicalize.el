@@ -27,3 +27,5 @@
               (set-match-data data)
               (replace-match replacement t t)))))
   (message "Done."))
+
+(provide 'slime-canonicalize)
