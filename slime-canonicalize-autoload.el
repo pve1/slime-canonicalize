@@ -11,7 +11,7 @@
   (slime-eval `(cl:progn
                 (cl:load ,(concat slime-canonicalize-location
                                   "slime-canonicalize.asd"))
-                (cl:require :slime-canonicalize))))
+                (asdf:load-system :slime-canonicalize))))
 
 
 (add-hook 'slime-connected-hook 'slime-load-slime-canonicalize)
